@@ -20,3 +20,14 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+    #jdkDirectory: # Required when javaHomeOption == Path
+    mavenVersionOption: 'Default'
+    #mavenDirectory: # Required when mavenVersionOption == Path
+    #mavenSetM2Home: false # Required when mavenVersionOption == Path
+    mavenAuthenticateFeed: false 
+    effectivePomSkip: false 
+    sonarQubeRunAnalysis: false 
+    #sqMavenPluginVersionChoice: 'latest' # Required when sonarQubeRunAnalysis == True# Options: latest, pom
+    #checkStyleRunAnalysis: false # Optional
+    #pmdRunAnalysis: false # Optional
+    #findBugsRunAnalysis: false # Optional
